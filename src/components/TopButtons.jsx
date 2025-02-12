@@ -24,10 +24,10 @@ const TopButtons = ({setQuery}) => {
     ]
 
   return (
-    <div className="flex items-center justify-around my-6 w-3/4">
+    <div className="flex lg:items-center justify-around my-6 lg:w-3/4">
         {
             ciudades?.map(ciudad => (
-                <button className="text-lg font-medium hover:scale-110 transition-all" key={ciudad.id} onClick={() => setQuery({q: ciudad.name})}>{ciudad.name}</button>
+                <button className="text-sm lg:text-lg font-medium hover:scale-110 transition-all" key={ciudad.id} onClick={() => setQuery({q: ciudad.name})}>{ciudad.name}</button>
             ))
         }
     </div>

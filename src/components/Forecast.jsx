@@ -2,7 +2,7 @@
 const Forecast = ({title,data}) => {
 
   return (
-    <div className="mt-4 w-2/4">
+    <div className="lg:w-2/4">
         <div className="flex items-center justify-start mt-6">
             <p className="uppercase font-medium">{title}</p>
         </div>

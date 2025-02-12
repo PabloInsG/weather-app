@@ -40,7 +40,7 @@ function App() {
   
   return (
     <>
-      <div className={`mx-auto max-w-screen h-[100vh] flex items-center flex-col py-5 px-32 bg-gradient-to-br 
+      <div className={`lg:mx-auto lg:max-w-screen lg:h-[100vh] lg:flex lg:items-center flex-col py-5 px-5 lg:px-32 bg-gradient-to-br 
         ${formatBackground()} shadow-xl shadow-gray-400`}>
         <TopButtons setQuery={setQuery}/>
         <Inputs setQuery={setQuery} setUnits={setUnits} />
@@ -48,10 +48,10 @@ function App() {
         {
           weather  && (
             <>
-            <TimeAndLocation weather={weather} />
-            <TemperaturaAndDetails weather={weather} units={units}/>
-            <Forecast title="Prevision del tiempo de 3 horas" data={weather.hourly} />
-            <Forecast title="Prevision del tiempo diario" data={weather.daily} />
+              <TimeAndLocation weather={weather} />
+              <TemperaturaAndDetails weather={weather} units={units}/>
+              <Forecast title="Previsión del tiempo de 3 horas" data={weather.hourly} />
+              <Forecast title="Previsión del tiempo diario" data={weather.daily} />
             </>
           )
         }
